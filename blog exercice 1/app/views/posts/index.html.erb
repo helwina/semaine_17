@@ -1,17 +1,17 @@
-<% @page_title = 'Blog article' %>
+ @page_title = 'Articles du blog' %>
 
 <div class="row">
   <h1 class="lead bg bg-primary text-center">Le premier TP Ruby-on-Rails</h1>
   <div class="container">
     <div class="col-md-3">
       <h1 class="text-center bg bg-primary lead">Liste des articles</h1>
-      <% @posts.each do |post| %>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <%= link_to(post.title, show_details_url(post.id))%>
-          </li>
-        </ul>
-      <% end %>
+        <% @posts.each do |post| %>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <%= link_to(post.title, show_details_url(post.id))%>
+            </li>
+          </ul>
+        <% end %>
     </div>
     <div class="col-md-9">
       <%= image_tag 'image_cycliste.jpg' %>
