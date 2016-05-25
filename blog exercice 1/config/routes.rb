@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 #DEBUT ROUTES BLOG ARTICLES
     root 'posts#index'
     get 'posts'             =>'posts#index'
-    get 'posts/:id'         =>'posts#show',as:'show_details'
+    get 'posts/:title'         =>'posts#show',as:'show_details'
 
 #FIN DES ROUTES DU BLOG ARTICLES
 
